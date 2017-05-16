@@ -1,7 +1,407 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b22b696d-abd9-4ce6-9e62-8ea7edfbd24b" name="Default" comment="" />
+    <list default="true" id="b22b696d-abd9-4ce6-9e62-8ea7edfbd24b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bfs_solver.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/bin/activate" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/bin/activate.csh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/bin/activate.fish" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/bin/f2py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/bin/python" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/bin/python3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/bin/python3.5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy-1.12.1.dist-info/DESCRIPTION.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy-1.12.1.dist-info/INSTALLER" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy-1.12.1.dist-info/METADATA" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy-1.12.1.dist-info/RECORD" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy-1.12.1.dist-info/WHEEL" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy-1.12.1.dist-info/metadata.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy-1.12.1.dist-info/top_level.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/.libs/libgfortran-ed201abd.so.3.0.0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/.libs/libopenblasp-r0-39a31c03.2.18.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/__config__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/_distributor_init.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/_globals.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/_import_tools.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/add_newdocs.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/compat/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/compat/_inspect.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/compat/py3k.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/compat/setup.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/_dummy.cpython-35m-x86_64-linux-gnu.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/_internal.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/_methods.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/arrayprint.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/cversions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/defchararray.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/einsumfunc.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/fromnumeric.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/function_base.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/generate_numpy_api.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/getlimits.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/include/numpy/__multiarray_api.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/include/numpy/__ufunc_api.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/include/numpy/_neighborhood_iterator_imp.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/include/numpy/_numpyconfig.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/include/numpy/arrayobject.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/include/numpy/arrayscalars.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/include/numpy/halffloat.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/include/numpy/multiarray_api.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/include/numpy/ndarrayobject.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/include/numpy/ndarraytypes.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/include/numpy/noprefix.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/include/numpy/npy_1_7_deprecated_api.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/include/numpy/npy_3kcompat.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/include/numpy/npy_common.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/include/numpy/npy_cpu.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/include/numpy/npy_endian.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/include/numpy/npy_interrupt.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/include/numpy/npy_math.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/include/numpy/npy_no_deprecated_api.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/include/numpy/npy_os.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/include/numpy/numpyconfig.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/include/numpy/old_defines.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/include/numpy/oldnumeric.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/include/numpy/ufunc_api.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/include/numpy/ufuncobject.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/include/numpy/utils.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/info.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/lib/libnpymath.a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/lib/npy-pkg-config/mlib.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/lib/npy-pkg-config/npymath.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/machar.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/memmap.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/multiarray.cpython-35m-x86_64-linux-gnu.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/multiarray_tests.cpython-35m-x86_64-linux-gnu.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/numeric.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/numerictypes.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/operand_flag_tests.cpython-35m-x86_64-linux-gnu.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/records.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/setup.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/setup_common.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/shape_base.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/struct_ufunc_test.cpython-35m-x86_64-linux-gnu.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/test_rational.cpython-35m-x86_64-linux-gnu.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/tests/data/astype_copy.pkl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/tests/data/recarray_from_file.fits" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/tests/test_abc.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/tests/test_api.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/tests/test_arrayprint.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/tests/test_datetime.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/tests/test_defchararray.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/tests/test_deprecations.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/tests/test_dtype.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/tests/test_einsum.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/tests/test_errstate.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/tests/test_extint128.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/tests/test_function_base.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/tests/test_getlimits.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/tests/test_half.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/tests/test_indexerrors.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/tests/test_indexing.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/tests/test_item_selection.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/tests/test_longdouble.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/tests/test_machar.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/tests/test_mem_overlap.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/tests/test_memmap.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/tests/test_multiarray.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/tests/test_nditer.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/tests/test_numeric.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/tests/test_numerictypes.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/tests/test_print.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/tests/test_records.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/tests/test_regression.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/tests/test_scalarinherit.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/tests/test_scalarmath.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/tests/test_scalarprint.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/tests/test_shape_base.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/tests/test_ufunc.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/tests/test_umath.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/tests/test_umath_complex.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/tests/test_unicode.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/umath.cpython-35m-x86_64-linux-gnu.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/core/umath_tests.cpython-35m-x86_64-linux-gnu.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/ctypeslib.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/__config__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/__version__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/ccompiler.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/command/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/command/autodist.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/command/bdist_rpm.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/command/build.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/command/build_clib.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/command/build_ext.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/command/build_py.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/command/build_scripts.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/command/build_src.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/command/config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/command/config_compiler.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/command/develop.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/command/egg_info.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/command/install.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/command/install_clib.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/command/install_data.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/command/install_headers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/command/sdist.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/compat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/conv_template.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/core.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/cpuinfo.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/environment.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/exec_command.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/extension.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/fcompiler/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/fcompiler/absoft.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/fcompiler/compaq.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/fcompiler/g95.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/fcompiler/gnu.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/fcompiler/hpux.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/fcompiler/ibm.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/fcompiler/intel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/fcompiler/lahey.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/fcompiler/mips.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/fcompiler/nag.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/fcompiler/none.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/fcompiler/pathf95.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/fcompiler/pg.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/fcompiler/sun.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/fcompiler/vast.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/from_template.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/info.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/intelccompiler.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/lib2def.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/line_endings.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/log.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/mingw/gfortran_vs2003_hack.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/mingw32ccompiler.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/misc_util.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/msvc9compiler.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/msvccompiler.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/npy_pkg_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/numpy_distribution.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/pathccompiler.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/setup.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/system_info.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/tests/test_exec_command.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/tests/test_fcompiler_gnu.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/tests/test_fcompiler_intel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/tests/test_misc_util.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/tests/test_npy_pkg_config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/tests/test_system_info.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/distutils/unixccompiler.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/doc/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/doc/basics.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/doc/broadcasting.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/doc/byteswapping.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/doc/constants.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/doc/creation.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/doc/glossary.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/doc/indexing.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/doc/internals.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/doc/misc.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/doc/structured_arrays.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/doc/subclassing.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/doc/ufuncs.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/dual.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/__main__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/__version__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/auxfuncs.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/capi_maps.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/cb_rules.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/cfuncs.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/common_rules.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/crackfortran.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/diagnose.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/f2py2e.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/f2py_testing.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/f90mod_rules.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/func2subr.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/info.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/rules.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/setup.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/src/fortranobject.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/src/fortranobject.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/tests/src/array_from_pyobj/wrapmodule.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/tests/src/assumed_shape/.f2py_f2cmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/tests/src/assumed_shape/foo_free.f90" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/tests/src/assumed_shape/foo_mod.f90" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/tests/src/assumed_shape/foo_use.f90" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/tests/src/assumed_shape/precision.f90" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/tests/src/kind/foo.f90" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/tests/src/mixed/foo.f" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/tests/src/mixed/foo_fixed.f90" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/tests/src/mixed/foo_free.f90" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/tests/src/parameter/constant_both.f90" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/tests/src/parameter/constant_compound.f90" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/tests/src/parameter/constant_integer.f90" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/tests/src/parameter/constant_non_compound.f90" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/tests/src/parameter/constant_real.f90" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/tests/src/regression/inout.f90" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/tests/src/size/foo.f90" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/tests/test_array_from_pyobj.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/tests/test_assumed_shape.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/tests/test_callback.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/tests/test_kind.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/tests/test_mixed.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/tests/test_parameter.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/tests/test_regression.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/tests/test_return_character.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/tests/test_return_complex.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/tests/test_return_integer.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/tests/test_return_logical.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/tests/test_return_real.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/tests/test_size.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/tests/util.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/f2py/use_rules.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/fft/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/fft/fftpack.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/fft/fftpack_lite.cpython-35m-x86_64-linux-gnu.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/fft/info.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/fft/setup.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/fft/tests/test_fftpack.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/fft/tests/test_helper.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/_datasource.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/_iotools.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/_version.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/arraypad.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/arraysetops.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/arrayterator.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/financial.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/format.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/function_base.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/index_tricks.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/info.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/nanfunctions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/npyio.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/polynomial.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/recfunctions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/scimath.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/setup.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/shape_base.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/stride_tricks.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/tests/data/py2-objarr.npy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/tests/data/py2-objarr.npz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/tests/data/py3-objarr.npy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/tests/data/py3-objarr.npz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/tests/data/python3.npy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/tests/data/win64python2.npy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/tests/test__datasource.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/tests/test__iotools.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/tests/test__version.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/tests/test_arraypad.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/tests/test_arraysetops.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/tests/test_arrayterator.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/tests/test_financial.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/tests/test_format.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/tests/test_function_base.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/tests/test_index_tricks.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/tests/test_io.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/tests/test_nanfunctions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/tests/test_packbits.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/tests/test_polynomial.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/tests/test_recfunctions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/tests/test_regression.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/tests/test_shape_base.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/tests/test_stride_tricks.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/tests/test_twodim_base.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/tests/test_type_check.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/tests/test_ufunclike.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/tests/test_utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/twodim_base.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/type_check.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/ufunclike.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/user_array.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/lib/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/linalg/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/linalg/_umath_linalg.cpython-35m-x86_64-linux-gnu.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/linalg/info.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/linalg/linalg.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/linalg/setup.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/linalg/tests/test_build.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/linalg/tests/test_deprecations.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/linalg/tests/test_linalg.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/linalg/tests/test_regression.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/ma/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/ma/bench.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/ma/core.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/ma/extras.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/ma/mrecords.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/ma/setup.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/ma/tests/test_core.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/ma/tests/test_extras.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/ma/tests/test_mrecords.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/ma/tests/test_old_ma.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/ma/tests/test_regression.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/ma/tests/test_subclassing.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/ma/testutils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/ma/timer_comparison.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/ma/version.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/matlib.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/matrixlib/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/matrixlib/defmatrix.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/matrixlib/setup.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/matrixlib/tests/test_defmatrix.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/matrixlib/tests/test_multiarray.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/matrixlib/tests/test_numeric.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/matrixlib/tests/test_regression.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/polynomial/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/polynomial/_polybase.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/polynomial/chebyshev.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/polynomial/hermite.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/polynomial/hermite_e.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/polynomial/laguerre.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/polynomial/legendre.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/polynomial/polynomial.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/polynomial/polyutils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/polynomial/setup.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/polynomial/tests/test_chebyshev.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/polynomial/tests/test_classes.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/polynomial/tests/test_hermite.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/polynomial/tests/test_hermite_e.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/polynomial/tests/test_laguerre.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/polynomial/tests/test_legendre.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/polynomial/tests/test_polynomial.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/polynomial/tests/test_polyutils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/polynomial/tests/test_printing.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/random/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/random/info.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/random/mtrand.cpython-35m-x86_64-linux-gnu.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/random/randomkit.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/random/setup.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/random/tests/test_random.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/random/tests/test_regression.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/setup.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/testing/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/testing/decorators.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/testing/noseclasses.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/testing/nosetester.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/testing/print_coercion_tables.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/testing/setup.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/testing/tests/test_decorators.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/testing/tests/test_doctesting.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/testing/tests/test_utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/testing/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/tests/test_ctypeslib.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/tests/test_matlib.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/tests/test_numpy_version.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/tests/test_reloading.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/tests/test_scripts.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/tests/test_warnings.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/lib/python3.5/site-packages/numpy/version.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/pip-selfcheck.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/env/pyvenv.cfg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/first_maze.png" afterPath="$PROJECT_DIR$/images/first_maze.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo.py" afterPath="$PROJECT_DIR$/demo.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/graph.py" afterPath="$PROJECT_DIR$/graph.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/maze.py" afterPath="$PROJECT_DIR$/maze.py" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,8 +415,8 @@
       <file leaf-file-name="maze.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/maze.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="667">
-              <caret line="67" column="14" lean-forward="false" selection-start-line="67" selection-start-column="14" selection-end-line="67" selection-end-column="14" />
+            <state relative-caret-position="901">
+              <caret line="67" column="19" lean-forward="false" selection-start-line="67" selection-start-column="19" selection-end-line="67" selection-end-column="19" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -27,24 +427,49 @@
       <file leaf-file-name="graph.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/graph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+            <state relative-caret-position="0">
+              <caret line="15" column="27" lean-forward="false" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="demo.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="node.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="demo.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+            <state relative-caret-position="280">
+              <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bfs_solver.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bfs_solver.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="121">
+              <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -53,9 +478,12 @@
         <option value="$PROJECT_DIR$/Graph.py" />
         <option value="$PROJECT_DIR$/Maze.py" />
         <option value="$PROJECT_DIR$/Demo.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/node.py" />
         <option value="$PROJECT_DIR$/maze.py" />
-        <option value="$PROJECT_DIR$/graph.py" />
         <option value="$PROJECT_DIR$/demo.py" />
+        <option value="$PROJECT_DIR$/graph.py" />
+        <option value="$PROJECT_DIR$/bfs_solver.py" />
       </list>
     </option>
   </component>
@@ -65,6 +493,7 @@
     <option name="width" value="1865" />
     <option name="height" value="1092" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -114,7 +543,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="/usr/bin/git" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/.gitignore&#10;true" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -263,12 +693,12 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20772947" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32960325" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33027524" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39959225" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -285,7 +715,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="14" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -312,7 +742,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-          <folding />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -338,7 +770,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-          <folding />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -364,14 +798,50 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3/dist-packages/apport_python_hook.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="151" column="0" lean-forward="false" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/maze.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="67" column="14" lean-forward="false" selection-start-line="67" selection-start-column="14" selection-end-line="67" selection-end-column="14" />
+        <state relative-caret-position="901">
+          <caret line="67" column="19" lean-forward="false" selection-start-line="67" selection-start-column="19" selection-end-line="67" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
@@ -380,16 +850,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/graph.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        <state relative-caret-position="0">
+          <caret line="15" column="27" lean-forward="false" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo.py">
+    <entry file="file://$PROJECT_DIR$/bfs_solver.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        <state relative-caret-position="121">
+          <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
           <folding />
         </state>
       </provider>

@@ -62,7 +62,10 @@ class Maze:
             return path
         if (up, down, left, right) == ('#', '#', ' ', ' '):
             return path
-        return hub
+        directions = (up, down, left, right).count(' ')
+        if directions > 2:
+            return hub
+        return path
 
     def maze_to_graph(self):
         vertex = {}
