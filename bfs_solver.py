@@ -40,6 +40,3 @@ class BFSSolver:
         x, y = begin
         path.append((x, y-1))
         return path
-
-
-

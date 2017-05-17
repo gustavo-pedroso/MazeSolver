@@ -111,5 +111,3 @@ class Maze:
                     pix[j, i] = (255, 0, 0)
 
         im.save("images/"+file_name, "PNG")
-
-

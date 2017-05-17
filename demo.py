@@ -1,7 +1,7 @@
 from maze import Maze
 from bfs_solver import BFSSolver
 
-input_maze = "first_maze.png"
+input_maze = "third_maze.png"
 
 maze = Maze("images/"+input_maze)
 print("Simple maze representation:")
@@ -20,5 +20,3 @@ maze.solution = solver.solve()
 
 maze.print_solution()
 maze.solution_to_image("solution_"+input_maze)
-
-
