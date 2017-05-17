@@ -20,3 +20,5 @@ maze.solution = solver.solve()
 
 maze.print_solution()
 maze.solution_to_image("solution_"+input_maze)
+
+
