@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b22b696d-abd9-4ce6-9e62-8ea7edfbd24b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/chess_board.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/first_maze.png" afterPath="$PROJECT_DIR$/images/first_maze.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/second_maze.png" afterPath="$PROJECT_DIR$/images/second_maze.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bfs_solver.py" afterPath="$PROJECT_DIR$/bfs_solver.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo.py" afterPath="$PROJECT_DIR$/demo.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/graph.py" afterPath="$PROJECT_DIR$/graph.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/maze.py" afterPath="$PROJECT_DIR$/maze.py" />
-    </list>
+    <list default="true" id="b22b696d-abd9-4ce6-9e62-8ea7edfbd24b" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
