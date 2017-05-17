@@ -5,6 +5,8 @@ class Graph:
     hubs = {}
     edges = {}
     n_hubs = 0
+    begin = None
+    end = None
 
     def __init__(self, height, width, vertex):
         self.height = height
@@ -13,18 +15,27 @@ class Graph:
 
     def print(self):
         for i in range(0, self.height):
-            print(i, end=' ')
             for j in range(0, self.width):
-                print(self.vertex[i, j], end=' ')
+                print(self.vertex[j, i], end=' ')
             print()
 
     def connect(self):
         hub_num = 0
+
+        for j in range(0, self.width):
+            if self.vertex[j, 1] == '@' and self.vertex[j, 0] == '+':
+                self.begin = (j, 1)
+                break
+        for j in range(0, self.width):
+            if self.vertex[j, self.height-2] == '@' and self.vertex[j, self.height-1] == '+':
+                self.end = (j, self.height-2)
+                break
+
         for i in range(0, self.height):
             for j in range(0, self.width):
-                self.edges[i, j] = []
-                if self.vertex[i, j] == '@':
-                    self.hubs[hub_num] = (i, j)
+                self.edges[j, i] = []
+                if self.vertex[j, i] == '@':
+                    self.hubs[hub_num] = (j, i)
                     hub_num += 1
         self.n_hubs = hub_num
         for i in range(0, hub_num):
@@ -49,6 +60,8 @@ class Graph:
     def print_conn(self):
         for hub in self.hubs.values():
             print(hub, '->', self.edges[hub])
+
+
 
 
 

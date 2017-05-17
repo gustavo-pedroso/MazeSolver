@@ -8,14 +8,15 @@ class BFSSolver:
         self.graph = graph
 
     def solve(self):
-        final = self.graph.hubs[self.graph.n_hubs - 1]
-        print('final = ',final)
+        pred = {}
+        path = []
+        begin = self.graph.begin
+        final = self.graph.end
         my_set = set()
         queue = Queue(maxsize=0)
-        path = [self.graph.hubs[0]]
 
-        my_set.add(self.graph.hubs[0])
-        queue.put(self.graph.hubs[0])
+        my_set.add(begin)
+        queue.put(begin)
 
         while queue.not_empty:
             v = queue.get()
@@ -24,7 +25,19 @@ class BFSSolver:
             for k in self.graph.edges[v]:
                 if k not in my_set:
                     my_set.add(k)
-                    path.append(k)
+                    pred[k] = v
                     queue.put(k)
 
-        print(path)
+        i = pred[final]
+        x, y = final
+        path.append((x, y+1))
+        path.append(final)
+        path.append(i)
+        while i in pred:
+            if i in pred:
+                i = pred[i]
+                path.append(i)
+        x, y = begin
+        path.append((x, y-1))
+        return path
+
