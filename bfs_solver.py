@@ -1,42 +1,39 @@
 from queue import Queue
+from solver import Solver
 
 
-class BFSSolver:
-    graph = None
+class BFSSolver(Solver):
 
-    def __init__(self, graph):
-        self.graph = graph
-
-    def solve(self):
-        pred = {}
+    @staticmethod
+    def solve(graph):
+        predecessor = {}
         path = []
-        begin = self.graph.begin
-        final = self.graph.end
+        begin = graph.begin
+        final = graph.end
         my_set = set()
-        queue = Queue(maxsize=0)
+        queue = Queue()
 
         my_set.add(begin)
         queue.put(begin)
 
         while queue.not_empty:
             v = queue.get()
+            print(v)
             if v == final:
+                found = True
                 break
-            for k in self.graph.edges[v]:
+            for k in graph.edges[v]:
                 if k not in my_set:
                     my_set.add(k)
-                    pred[k] = v
+                    predecessor[k] = v
                     queue.put(k)
 
-        i = pred[final]
-        x, y = final
-        path.append((x, y+1))
+        if not found:
+            print('Solution not found!')
+        i = predecessor[final]
         path.append(final)
         path.append(i)
-        while i in pred:
-            if i in pred:
-                i = pred[i]
-                path.append(i)
-        x, y = begin
-        path.append((x, y-1))
+        while i in predecessor:
+            i = predecessor[i]
+            path.append(i)
         return path

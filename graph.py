@@ -1,62 +1,85 @@
+import globals as g
+
+
 class Graph:
-    height = 0
-    width = 0
-    vertex = {}
-    hubs = {}
-    edges = {}
-    n_hubs = 0
-    begin = None
-    end = None
+    def __init__(self, maze):
+        self.height = maze.height
+        self.width = maze.width
+        self.hubs = []
+        self.edges = {}
+        self.begin = None
+        self.end = None
+        self.vertex = self.__get_vertex(maze)
+        self.__connect()
 
-    def __init__(self, height, width, vertex):
-        self.height = height
-        self.width = width
-        self.vertex = vertex
+    def __get_vertex(self, maze):
+        vertex = {}
+        for i in range(0, maze.height):
+            for j in range(0, maze.width):
+                vertex[j, i] = self.__get_node(maze, (j, i))
+        return vertex
 
-    def print(self):
+    def __get_node(self, maze, pos):
+        j, i = pos
+        curr = maze.dots[j, i]
+        up = maze.dots[j, i + 1] if (j, i + 1) in maze.dots else g.out
+        down = maze.dots[j, i - 1] if (j, i - 1) in maze.dots else g.out
+        left = maze.dots[j - 1, i] if (j - 1, i) in maze.dots else g.out
+        right = maze.dots[j + 1, i] if (j + 1, i) in maze.dots else g.out
+
+        directions = (up, down, left, right).count(g.free)
+
+        if curr == g.free and (up == g.out or down == g.out or right == g.out or left == g.out):
+            if self.begin is None:
+                self.begin = (j, i)
+                return g.hub
+            elif self.end is None:
+                self.end = (j, i)
+                return g.hub
+
+        if curr == g.wall:
+            return g.wall
+        if (up, down, left, right) == (g.free, g.free, g.wall, g.wall) or (up, down, left, right) == (
+                g.wall, g.wall, g.free, g.free):
+            return g.free
+        if directions >= 2:
+            return g.hub
+        return g.free
+
+    def __connect(self):
+        for i in range(0, self.height):
+            for j in range(0, self.width):
+                if self.vertex[j, i] == g.hub:
+                    self.hubs.append((j, i))  # get list of hubs
+                    self.edges[j, i] = []  # start edges as dictionary of lists
+
+        for hub in self.hubs:
+            x, y = hub
+            if y < self.height - 1:
+                j = y + 1
+                while j < self.height - 1 and self.vertex[x, j] != g.wall and self.vertex[x, j] != g.hub:
+                    j += 1
+                if self.vertex[x, j] == g.hub:
+                    self.edges[x, y].append((x, j))
+                    self.edges[x, j].append((x, y))
+
+            if x < self.width - 1:
+                k = x + 1
+                while k < self.width - 1 and self.vertex[k, y] != g.wall and self.vertex[k, y] != g.hub:
+                    k += 1
+                if self.vertex[k, y] == g.hub:
+                    self.edges[x, y].append((k, y))
+                    self.edges[k, y].append((x, y))
+
+    def print_graph_nodes(self):
         for i in range(0, self.height):
             for j in range(0, self.width):
                 print(self.vertex[j, i], end=' ')
             print()
 
-    def connect(self):
-        hub_num = 0
-
-        for j in range(0, self.width):
-            if self.vertex[j, 1] == '@' and self.vertex[j, 0] == '+':
-                self.begin = (j, 1)
-                break
-        for j in range(0, self.width):
-            if self.vertex[j, self.height-2] == '@' and self.vertex[j, self.height-1] == '+':
-                self.end = (j, self.height-2)
-                break
-
-        for i in range(0, self.height):
-            for j in range(0, self.width):
-                self.edges[j, i] = []
-                if self.vertex[j, i] == '@':
-                    self.hubs[hub_num] = (j, i)
-                    hub_num += 1
-        self.n_hubs = hub_num
-        for i in range(0, hub_num):
-            x, y = self.hubs[i]
-
-            if y < self.height-1:
-                j = y+1
-                while j < self.height-1 and self.vertex[x, j] != '#' and self.vertex[x, j] != '@':
-                    j += 1
-                if self.vertex[x, j] == '@':
-                    self.edges[x, y].append((x, j))
-                    self.edges[x, j].append((x, y))
-
-            if x < self.width-1:
-                k = x + 1
-                while k < self.width-1 and self.vertex[k, y] != '#' and self.vertex[k, y] != '@':
-                    k += 1
-                if self.vertex[k, y] == '@':
-                    self.edges[x, y].append((k, y))
-                    self.edges[k, y].append((x, y))
-
-    def print_conn(self):
-        for hub in self.hubs.values():
+    def print_graph_stats(self):
+        print('Graph Nodes:')
+        print(self.hubs)
+        print('Graph Connections:')
+        for hub in self.hubs:
             print(hub, '->', self.edges[hub])
