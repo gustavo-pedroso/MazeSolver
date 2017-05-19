@@ -1,10 +1,10 @@
 #Python code to solve image based mazes
 
-Capability
+Capabilities:
  * Anywhere entry, exit
  * Image solution printing
 
-Algorithms
+Algorithms:
  * BFS Search
  * DFS Search
  * Naive Dijkstra Search (To be improved)
