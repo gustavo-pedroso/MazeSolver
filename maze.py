@@ -3,7 +3,6 @@ import globals as g
 
 
 class Maze:
-
     def __init__(self, image_path):
         self.dots = {}
         self.solution = {}
@@ -47,14 +46,15 @@ class Maze:
             self.print()
 
     def solution_to_image(self, file_name):
-        image = Image.new('RGB', (self.width, self.height))
-        pix = image.load()
-        for i in range(0, self.height):
-            for j in range(0, self.width):
-                if self.dots[j, i] == g.wall:
-                    pix[j, i] = g.black
-                elif self.dots[j, i] == g.free:
-                    pix[j, i] = g.white
-                else:
-                    pix[j, i] = g.red
-        image.save('images/'+file_name, 'PNG')
+        if self.solution is not None:
+            image = Image.new('RGB', (self.width, self.height))
+            pix = image.load()
+            for i in range(0, self.height):
+                for j in range(0, self.width):
+                    if self.dots[j, i] == g.wall:
+                        pix[j, i] = g.black
+                    elif self.dots[j, i] == g.free:
+                        pix[j, i] = g.white
+                    else:
+                        pix[j, i] = g.red
+            image.save('images/'+file_name, 'PNG')

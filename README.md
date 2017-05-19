@@ -1,5 +1,10 @@
 #Python code to solve image based mazes
 
-- Next Steps
- * Implement more algorithms
- * Maze recognition from generic images
+Capability
+ * Anywhere entry, exit
+ * Image solution printing
+
+Algorithms
+ * BFS Search
+ * DFS Search
+ * Naive Dijkstra Search (To be improved)

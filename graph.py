@@ -1,4 +1,5 @@
 import globals as g
+from math import *
 
 
 class Graph:
@@ -7,6 +8,7 @@ class Graph:
         self.width = maze.width
         self.hubs = []
         self.edges = {}
+        self.distances = {}
         self.begin = None
         self.end = None
         self.vertex = self.__get_vertex(maze)
@@ -70,6 +72,13 @@ class Graph:
                 if self.vertex[k, y] == g.hub:
                     self.edges[x, y].append((k, y))
                     self.edges[k, y].append((x, y))
+
+    def get_distances(self):
+        for hub in self.hubs:
+            x1, y1 = hub
+            for con in self.edges[hub]:
+                x2, y2 = con
+                self.distances[hub, con] = ceil(sqrt(pow((x1 - x2), 2) + pow((y1 - y2), 2)))
 
     def print_graph_nodes(self):
         for i in range(0, self.height):

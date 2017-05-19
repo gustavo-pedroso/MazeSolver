@@ -1,30 +1,31 @@
-from queue import Queue
+from queue import LifoQueue
 from solver import Solver
 
 
-class BFSSolver(Solver):
+class DFSSolver(Solver):
 
     @staticmethod
     def solve(graph):
-        predecessor = {}
         path = []
+        predecessor = {}
         my_set = set()
-        queue = Queue()
+        stack = LifoQueue()
 
-        my_set.add(graph.begin)
-        queue.put(graph.begin)
+        stack.put(graph.begin)
+
         found = False
 
-        while not queue.empty():
-            v = queue.get_nowait()
+        while not stack.empty():
+            v = stack.get()
             if v == graph.end:
                 found = True
                 break
-            for k in graph.edges[v]:
-                if k not in my_set:
-                    my_set.add(k)
-                    predecessor[k] = v
-                    queue.put(k)
+            if v not in my_set:
+                my_set.add(v)
+                for k in graph.edges[v]:
+                    if k not in my_set:
+                        predecessor[k] = v
+                        stack.put(k)
 
         if not found:
             print('No Solution Found!')
